@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .row
+    #map.col-sm-9
+
+    .col-sm-3
+      #chat
+      form.form-inline.chatInput#input
+        .form-group
+          .input-group
+            input.form-control(type='text', placeholder='Msg')
+        button.btn.btn-primary(type='submit') Send
